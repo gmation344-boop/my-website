@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Moodeloom Order Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f6e0c9; /* Light Pastel Orange */
+      padding: 20px;
+      color: #333;
+    }
+    .banner {
+      max-width: 500px;
+      margin: 0 auto 20px auto;
+      background: linear-gradient(135deg, #e0b87a, #c97a40);
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 12px;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 0 0 15px rgba(224,184,122,0.6);
+    }
+    .form-container {
+      max-width: 500px;
+      margin: auto;
+      background: #fff7f0;
+      padding: 25px;
+      border-radius: 15px;
+      border: 2px solid #e0b87a;
+      box-shadow: 0 0 18px rgba(224,184,122,0.5);
+    }
+    .logo {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      color: #c97a40;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    .tagline {
+      text-align: center;
+      font-size: 14px;
+      color: #7a5e46;
+      margin-bottom: 20px;
+    }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #c97a40;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #5a4636;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #c97a40;
+      background: #fff;
+      color: #333;
+    }
+    input[type="checkbox"], input[type="radio"] {
+      width: auto;
+      margin-right: 8px;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #e09252;
+      box-shadow: 0 0 8px #e0b87a;
+    }
+    button {
+      background: linear-gradient(135deg, #e0b87a, #c97a40);
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: linear-gradient(135deg, #f0c98a, #d9864c);
+      box-shadow: 0 0 12px #e0b87a;
+    }
+    .note {
+      font-size: 13px;
+      color: #444;
+      margin-top: 15px;
+      background: #fde8d7;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #e0b87a;
+    }
+    .trust {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 13px;
+      color: #7a5e46;
+    }
+    .insta {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .insta img {
+      width: 38px;
+      height: 38px;
+      cursor: pointer;
+      filter: drop-shadow(0 0 6px #e0b87a);
+    }
+    .help {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: #c97a40;
+      background: #fde8d7;
+      padding: 12px;
+      border-radius: 10px;
+      border: 2px dashed #e0b87a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner">✨ Limited Time Offer – Free Delivery Today! ✨</div>
+
+  <div class="form-container">
+    <div class="logo">Moodeloom</div>
+    <div class="tagline">Trusted Clothing Brand • Since 2020</div>
+    <h2>Secure Order Form</h2>
+
+    <!-- Order Form -->
+    <form action="https://script.google.com/macros/s/AKfycbwE4Vz1z17G5OkAPfOaqM6S_i5IZcJG-rE1Y4kMRAmbfatYs_TD4dKZMmd5s5zs6nMV/exec" method="POST">
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="address">Address</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <label for="pincode">Pincode</label>
+      <input type="text" id="pincode" name="pincode" required>
+
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" name="mobile" required>
+
+      <label for="size">T-Shirt Size</label>
+      <select id="size" name="tshirt_size" required>
+        <option value="">-- Select Size --</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+
+      <label for="jeans">Jeans Size</label>
+      <select id="jeans" name="jeans_size" required>
+        <option value="">-- Select Size --</option>
+        <option value="26">26</option>
+        <option value="28">28</option>
+        <option value="30">30</option>
+        <option value="32">32</option>
+        <option value="34">34</option>
+        <option value="36">36</option>
+        <option value="38">38</option>
+      </select>
+
+    <!-- ✅ Combo Options -->
+<label>Select Combo (Optional)</label>
+<label><input type="radio" name="combo" value="Green Combo"> Green Combo</label>
+<label><input type="radio" name="combo" value="Black Combo"> Black Combo</label>
+<label><input type="radio" name="combo" value="Grey Combo"> Grey Combo</label>
+
+      <label>Payment Method</label>
+      <input type="radio" id="cod" name="payment" value="Cash on Delivery" checked>
+      <label for="cod">Cash on Delivery</label>
+
+      <button type="submit">Place Secure Order</button>
+    </form>
+
+    <div class="note">
+      <b>Return Policy:</b><br>
+      Easy Returns after delivery.<br>
+      Refunds processed within 24 hours.<br>
+      100% Customer Satisfaction Guaranteed.
+    </div>
+
+    <!-- Trust Message -->
+    <div class="trust">
+      🔒 100% Secure Checkout
+    </div>
+
+    <!-- Instagram -->
+    <div class="insta">
+      <a href="https://www.instagram.com/modeloom__official/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+      </a>
+    </div>
+
+    <!-- Help Section -->
+    <div class="help">
+    If you don't understand the form then <br>
+       👉 Click on Instagram logo below
+    </div>
+  </div>
+</body>
+</html>
